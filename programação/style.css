@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family:'Lexend', sans-serif;
+}
+
+:root {
+    --purple: #9400D3;
+    --orange: #fcb500;
+    --black: #000000;
+    --purple-white:#9932CC	;
+    --textpurple-white:#d8bfd5	;
+    --clear:#aa5fcf;
+    --instagram:#ff00aa;
+    --yotube:#cd0404;
+    --discord:#45668e;
+
+}
+main{
+    display: flex;
+}
+.login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 500px;
+    min-height: 100vh;
+    padding: clamp(35px,8%, 70px);
+    background-color: #9400D3;
+}
+
+.wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+.login-logo{
+    width: 110px;
+    margin-bottom: 80px;
+}
+
+.login-title{
+    color:var(--orange);
+    font-size:1.5em;
+    margin-bottom: 30px;
+}
+
+.login-label{
+    display: block;
+    margin-bottom: 20px;
+    width: 100%;
+    
+
+}
+.input{
+    width:100%;
+    background-color: var(--purple-white);
+    border: 2px solid rgba(0,0,0,0);
+    border-radius: 5px;
+    outline:none;
+    font-size: 0.9em;
+    padding:25px 10px 10px;
+    font-weight: 500;
+    color: var(--textpurple-white)
+}
+
+.login-label span{
+    position: absolute;
+    font-weight: 400;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    color:var(--textpurple-white);
+    margin:18px;
+    cursor:text;
+    transition: all 200ms ease;
+}
+.input:focus{
+    background-color: var(--clear);
+    border: 2px solid var(--orange);
+
+}
+
+.login-label .span-active{
+    font-size: 0.7em;
+    margin: 8px 10px;
+
+}
+
+.login-icons{
+    display:flex;
+    gap:10px;
+    width:30%;
+    margin-top: 20px;
+}
+.login-icons img { 
+width: 40px;
+}
+
+.icons-button{
+    width: 33.33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    border-radius: 60px;
+    cursor: pointer;
+    border:none;
+    background-color:#fcd200 ;
+}
+
+.login-icons .icons-button:nth-child(1){
+    background-color:var(--instagram);
+}
+
+.login-icons .icons-button:nth-child(2){
+    background-color:var(--discord);
+}
+
+.login-icons .icons-button:nth-child(3){
+    background-color:var(--yotube);
+}
+
+.login-label--checkbox{
+    width: 100%;
+    margin:15px 0 50px;
+    font-size:0.9em;
+    display:flex;
+    align-items: center;
+}
+
+.input--checkbox{
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color:var(--purple-white);
+    margin-right: 8px;
+    border-radius: 3px;
+}
+
+.input--checkbox:checked{
+background-color: var(--orange);
+}
+
+
+
+.input--checkbox:checked::after{
+    content: "";
+    display:block;
+    width: 5px;
+    height: 10px;
+    border:3px solid rgb(170, 0, 255);
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+    margin: 2px 6px;
+}
+
+.login-button{
+    width: 60px;
+    height:60px;
+    padding:20px;
+    display:flex;
+    align-items:;
+    justify-content:center;
+    border-radius: 20px;
+    border:none;
+    background-color:var(--orange);
+    cursor:pointer;
+    margin-bottom: 60px;
+}
+
+.login-button svg{
+    fill:rgb(255, 219, 173);
+}
+
+.login-button:disabled{
+    cursor:auto;
+    background-color: var(--purple);
+    border: 2.7px solid var(--purple-white);
+}
+
+.login-button:disabled svg{
+    fill: rgb(255, 219, 173)
+}
+
+.login-link{
+    font-size:0.8em;
+    text-decoration:none;
+    color: var(--purple-white);
+    margin-bottom:5px;
+    font-weight:700;
+
+}
+
+
+.wallpaper{
+    width:100%;
+    background-image: url(./imagens/overwatch.jpg);
+    background-size: cover;
+    background-position:center;
+    flex:1;
+
+}
